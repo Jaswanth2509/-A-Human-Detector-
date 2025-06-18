@@ -44,14 +44,14 @@ while True:
         if matched_id is None:
             matched_id = next_object_id
             next_object_id += 1
-            ages[matched_id] = random.randint(5, 80)  # Simulated age
+            ages[matched_id] = random.randint(5, 80) 
 
         updated_trackers[matched_id] = centroid
 
         x, y, w, h = rects[i]
         age = ages[matched_id]
 
-        # Color logic: red if > 45, else green
+       
         color = (0, 0, 255) if age > 45 else (0, 255, 0)
         label = f"Age: {age}"
 
